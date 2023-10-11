@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S h r o u d s</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Define the common styles for pages */
+        .page {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* When a page is displayed, change display to block and opacity to 1 */
+        .page.active {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+</head>
+<body>
+
+
+    <!-- .   .    .   .    .  .    U .   ..    .    .   .       .   .   E   -->
+    <!--  .     . .  Y   . .   .  . .     . .  .   . .    C . .  A   . .    -->
+    <!--   . L  .   .   .   .   .   .   .  S .   .   .   . H  .   .   .   . -->
+    <!--    . .   A  . .  .   .O .     . .     . .   O  . .     . N.     .  -->
+    <!--     .  .     .    .   .       .   T    .  T     .       .     G .  -->
+    <!-- THE LAYOUTS ARE HIDDEN UNTIL THE JAVASCRIPT SAYS OTHERWISE -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div id="page1" class="page active">
+        <p>You reach a house.</p>
+        <button onclick="navigateToPage(2)">Go into the house</button>
+        <br>
+        <button onclick="navigateToPage(3)">Go to the back of the house</button>
+    </div>
+    <div id="page2" class="page">
+        <p>You enter into a small hallway.<br> There's a small crate to your left, <br>and a dead cat to your right.</p>
+        <button onclick="navigateToPage(5)">Eat the cat</button>
+        <button onclick="navigateToPage(6)">Inspect the crate</button>
+    </div>
+    <div id="page3" class="page">
+        <p>At the back of the house,<br> there is a small garden with a crooked wicker fence.<br> A shed resides in the far 
+            left corner.</p>
+        <button onclick="navigateToPage(4)">Enter the shed</button>
+        <button onclick="navigateToPage(1)">Go back to the front of the house</button>
+    </div>
+    <div id="page4" class="page">
+        <p>The shed is locked. Must need a key.</p>
+        <button onclick="navigateToPage(1)">Go back to the front of the house</button>
+    </div>
+    <div id="page5" class="page">
+        <p>Don't eat cats. Seriously.</p>
+        <button onclick="navigateToPage(1)">Restart</button>
+    </div>
+
+
+    <div id="page6" class="page">
+        <p>You pick up the crate. Inside,<br> there are 3 chewed up lego bricks,<br> and an unusually heavy can of soup.</p>
+        <button onclick="navigateToPage(11)">Open the soup can</button>
+        <button onclick="navigateToPage(8)">Put the crate down and continue into the hall</button>
+    </div>
+
+    <div id="page8" class="page">
+        <p>You continue into the hall.<br> There are 3 doors on on either side.</p>
+        <button onclick="navigateToPage(9)">Open door 1</button>
+        <button onclick="navigateToPage(10)">Open door 2</button>
+        <button onclick="navigateToPage(11)">Open door 3</button>
+        <button onclick="navigateToPage(2)">Back</button>
+    </div>
+
+    <div id="page9" class="page">
+        <p>You open door 1.<br>Inside, there's a small TV set on a wooden table.<br>
+        The screen flickers with a strange light.</p>
+        <button onclick="navigateToPage(1)">Blah</button>
+    </div>
+
+    <div id="page10" class="page">
+        <p>You open door 2.</p>
+        
+    </div>
+
+    <div id="page11" class="page">
+        <p>In the can, there's some damp sand.</p>
+        <button onclick="navigateToPage(12)">Search the sand</button>
+        <button onclick="navigateToPage(6)">Back</button>
+    </div>
+
+    <div id="page12" class="page">
+        <p>You empty the sand onto the floor.<br> A key presents itself.</p>
+        <button onclick="navigateToPage(8)">Take the key and continue</button>
+        <button onclick="navigateToPage(1)">Take the key and go back</button>
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
